@@ -3,4 +3,8 @@ Arithmetic Logic UnitL(ALU) is the basic component of any processor. This projec
 
 
 
+
+
+
+
 <img src="Images/640px-ALU_block.gif" alt="ALU"/>
