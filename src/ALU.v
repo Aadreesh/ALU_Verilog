@@ -18,8 +18,8 @@ module ALU
     
     add_all add(a[31:0], b[31:0], 1b'0, add_out[31:0], add_cout);
     sub_all sub(a[31:0], b[31:0], 1b'0, sub_out[31:0], sub_cout);
-    inc_all inc(a[31:0], 32'b1, 1'b0, inc_out[31:0], inc_cout);
-    dec_all dec(a[31:0], 32'b1, 1'b0, dec_out[31:0], dec_cout);
+    add_all inc(a[31:0], 32'b1, 1'b0, inc_out[31:0], inc_cout);
+    sub_all dec(a[31:0], 32'b1, 1'b0, dec_out[31:0], dec_cout);
     and_all and(a[31:0], b[31:0], and_out[31:0]);
      or_all  or(a[31:0], b[31:0], or_out[31:0]);
     exor_all exor(a[31:0], b[31:0], exor_out[31:0]);
