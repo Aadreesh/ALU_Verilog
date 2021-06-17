@@ -6,7 +6,7 @@ module and_all
 };
     and a0(y[0],a[0],b[0]);
     and a1(y[1],a[1],b[1]);
-    and a2(y[2],a[2],b[2);
+    and a2(y[2],a[2],b[2]);
     and a3(y[3],a[3],b[3]);
     and a4(y[4],a[4],b[4]);
     and a5(y[5],a[5],b[5]);

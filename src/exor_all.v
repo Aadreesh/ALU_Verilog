@@ -6,7 +6,7 @@ module exor_all
 };
     exor b0(y[0],a[0],b[0]);
     exor b1(y[1],a[1],b[1]);
-    exor b2(y[2],a[2],b[2);
+    exor b2(y[2],a[2],b[2]);
     exor b3(y[3],a[3],b[3]);
     exor b4(y[4],a[4],b[4]);
     exor b5(y[5],a[5],b[5]);
