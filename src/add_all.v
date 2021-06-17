@@ -32,5 +32,6 @@ module add_all #(parameter N = 32)
 			end
 		
 	endgenerate
+	assign cout = C[31];
 
 endmodule
