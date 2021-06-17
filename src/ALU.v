@@ -1,3 +1,8 @@
+`include "and_all.v"
+`include "exor_all.v"
+`include "or_all.v"
+`include "not_all.v"
+
 module ALU
 {
     input status,
@@ -16,7 +21,7 @@ module ALU
     inc_all inc(a[31:0], inc_out[31:0], inc_cout);
     dec_all dec(a[31:0], dec_out[31:0], dec_cout);
     and_all and(a[31:0], b[31:0], and_out[31:0]);
-    or_all   or(a[31:0], b[31:0], or_out[31:0]);
+     or_all  or(a[31:0], b[31:0], or_out[31:0]);
     exor_all exor(a[31:0], b[31:0], exor_out[31:0]);
     not_all not (a[31:0], b[31:0], not_out[31:0]);
 
