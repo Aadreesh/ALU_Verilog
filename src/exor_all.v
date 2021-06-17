@@ -2,7 +2,7 @@
 module exor_all
 {
     input [31:0] a, b,
-    output [31:0] out
+    output [31:0] y
 };
     exor b0(y[0],a[0],b[0]);
     exor b1(y[1],a[1],b[1]);
