@@ -1,5 +1,5 @@
 #
-Arithmetic Logic UnitL(ALU) is the basic component of any processor. This project mainly focuses on the basic functionalities implemented using verilog.
+Arithmetic Logic UnitL(ALU) is the indispensible component of any processor. This project mainly focuses on the basic functionalities implemented using verilog.
 
 
 
