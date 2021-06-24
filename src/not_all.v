@@ -1,9 +1,9 @@
-`include "not.v"
+//`include "not.v"
 module not_all
-{
+(
     input [31:0] a,
     output [31:0] y
-};
+);
     not c0(y[0],a[0]);
     not c1(y[1],a[1]);
     not c2(y[2],a[2]);

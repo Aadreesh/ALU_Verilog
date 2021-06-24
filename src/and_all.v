@@ -1,9 +1,9 @@
-`include "and.v"
+//`include "and.v"
 module and_all
-{
+(
     input [31:0] a, b,
     output [31:0] y
-};
+);
     and a0(y[0],a[0],b[0]);
     and a1(y[1],a[1],b[1]);
     and a2(y[2],a[2],b[2]);

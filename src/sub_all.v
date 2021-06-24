@@ -1,7 +1,4 @@
-`include "and_all.v"
-`include "exor_all.v"
-`include "or.v"
-`include "and.v"
+`include "add_all.v"
 `include "not_all.v"
 module sub_all #(parameter N = 32)
 
@@ -22,14 +19,14 @@ module sub_all #(parameter N = 32)
 	and_all Cgen(a[31:0], b[31:0], G[31:0]);
 	exor_all Cprop(a[31:0], b[31:0], P[31:0]);
 	generate
-		for(index = 0; index < N-1; index++)
-			begin  
+		for(index = 0; index < N-1; index=index+1)
+			begin : m1  
 				and and33(temp, P[index], C[index]);
 				or or33(C[index+1], G[index], temp);
 				exor exor33(out[index], P[index], C[index]);
 			end
-		for(index = 0; index < N; index++)
-			begin  
+		for(index = 0; index < N; index=index+1)
+			begin : m2 
 				exor exor33(out[index], P[index], C[index]);
 			end
 		
@@ -37,3 +34,4 @@ module sub_all #(parameter N = 32)
 	assign cout = C[31];
 
 endmodule
+ 

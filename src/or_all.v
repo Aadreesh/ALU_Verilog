@@ -1,9 +1,9 @@
-`include "or.v"
+//`include "or.v"
 module or_all
-{
+(
     input [31:0] a, b,
     output [31:0] y 
-};
+);
     or d0(y[0],a[0],b[0]);
     or d1(y[1],a[1],b[1]);
     or d2(y[2],a[2],b[2]);
